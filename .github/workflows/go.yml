@@ -25,5 +25,8 @@ jobs:
 
     - name: Build
       run: | 
+        go env
+        go mod init
+        
         git clone https://github.com/bazil/fuse.git ./_gopath/src/github.com/bazil/fuse
         make 
