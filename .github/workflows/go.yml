@@ -28,5 +28,6 @@ jobs:
         git clone https://github.com/bazil/fuse.git ./_gopath/src/github.com/bazil/fuse
         git clone https://github.com/golang/sys.git ./_gopath/src/golang.org/x/sys
         make 
+        ls -lah
       env:
         GO111MODULE: "off"
