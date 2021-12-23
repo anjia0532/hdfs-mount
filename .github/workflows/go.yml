@@ -19,10 +19,9 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
-        go-version: 1.17
+        go-version: 1.16
 
     - name: Build
       run: | 
-        git clone https://github.com/bazil/fuse.git ./_gopath/src/github.com/bazil/fuse 
-        go mod init 
+        git clone https://github.com/bazil/fuse.git ./_gopath/src/github.com/bazil/fuse
         make 
